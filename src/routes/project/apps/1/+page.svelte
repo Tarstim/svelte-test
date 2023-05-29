@@ -17,26 +17,17 @@ function add() {
   }
 }
 
-function remove(index) {
-  todoList.splice(index, 1);
-  todoList = todoList;
-}
-
-function complete(index) {
-  todoList[index].completed = !todoList[index].completed;
-}
-
 
 </script>
 <main>
-
+<h1>My to-do list</h1>
     <form on:submit|preventDefault={add}>
         <input bind:value={newItem} placeholder="Enter to-do" />
         <button class="add-todo" on:click={add}><span>+</span></button>
       </form>
       
 </main>
-<h1>My to-do list</h1>
+
 <style>
 
 main {
@@ -122,4 +113,14 @@ h1 {
       <Icon name="delete" />
     </button>
   </div>
+  
+  function remove(index) {
+  todoList.splice(index, 1);
+  todoList = todoList;
+}
+
+function complete(index) {
+  todoList[index].completed = !todoList[index].completed;
+}
+
 
