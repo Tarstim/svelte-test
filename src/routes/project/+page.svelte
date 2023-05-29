@@ -18,12 +18,10 @@
   {/each}
  </div>
 </div>
-
 <script>
     import { routes } from './routes.js';
    </script>
-   
-   <style>
+<style>
     .container {
      margin: 50px auto;
      max-width: 800px;
@@ -46,4 +44,4 @@
      color: rgb(10, 10, 139);
     }
    </style>
-  
+     
