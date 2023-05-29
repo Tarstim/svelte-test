@@ -1,33 +1,5 @@
 <script>
 
-button {
-  background-color: transparent;
-  border: none;
-}
-
-button.delete,
-button.delete:hover {
-  color: brown;
-  transition: color 100ms ease-out;
-}
-button.complete,
-button.complete:hover {
-  color: cadetblue;
-  transition: color 100ms ease-out;
-}
-.todo.completed {
-  color: slategray;
-}
-
-.todo.completed .todo\_\_text {
-  text-decoration: line-through;
-}
-
-.todo.completed button {
-  color: silver;
-}
-
-
 import Icon from '../../../../components/Icon.svelte';
 
 let newItem = '';
@@ -142,13 +114,4 @@ h1 {
     </button>
   </div>
 
-  function remove(index) {
-    todoList.splice(index, 1);
-    todoList = todoList;
-  }
-  
-  function complete(index) {
-    todoList[index].completed = !todoList[index].completed;
-  }
-  
   
