@@ -57,5 +57,48 @@ input {
   outline: none;
 }
 
+.todos {
+  width: 100%;
+  max-width: 500px;
+}
+
+.todo {
+  display: flex;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+  background-color: hsla(0, 0%, 100%, 0.2);
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo\_\_buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.todo button {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2em 0;
+}
+
 </style>
 
+<div class="todos">
+    {#each todoList as item, index}
+	    <span class="todo__text">{item.task}</span>
+        <div class="todo__buttons"></div>
+    {/each}
+</div>
