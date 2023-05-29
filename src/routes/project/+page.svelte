@@ -44,13 +44,3 @@
      color: rgb(10, 10, 139);
     }
    </style>
-     
-     <div class="todo__buttons">
-        <button class="complete" on:click={() => complete(index)}>
-          <Icon name="check-mark" />
-        </button>
-        <button class="delete" on:click={() => remove(index)}>
-          <Icon name="delete" />
-        </button>
-      </div>
-
