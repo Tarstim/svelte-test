@@ -26,6 +26,7 @@
 </div>
 
 <div class='background-div'></div>
+
 <style>
     .info {
         text-align: center;
