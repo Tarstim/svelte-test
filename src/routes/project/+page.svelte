@@ -19,7 +19,6 @@
  </div>
 </div>
 <script>
-    import Icon from '../../../../components/Icon.svelte';
     import { routes } from './routes.js';
    </script>
 <style>
